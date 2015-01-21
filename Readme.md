@@ -1,3 +1,3 @@
-## Yo, I'm a Readme
+## Homework Assignment 9 @ TIY
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+re-creating an etsy page and appending data using jQuery
