@@ -4,23 +4,101 @@
 
 // Custom Styles
 body {
-  background: #fafafa;
+  background: lightgray;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 600px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+
+// =================== Header Section =========================
+.header{
+  background: white;
+  padding: 30px;
+  border-bottom: 1px solid gray;
+    h1{
+      margin-top: 0px;
+      display: inline-block;
+      color: red;
+      font-family: Times New Roman;
+      font-size: 40px;
+      padding-right: 20px;
+    }
+
 }
+
+input{
+  padding: 5px;
+}
+.srch{
+  background: #5BB0CB;
+  border-radius: 4px;
+  padding: 5px;
+  color:white;
+}
+.brwse{
+  background: white;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 5px;
+}
+.header a{
+  padding: 5px;
+  text-decoration: none;
+}
+.sign{
+  background: white;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 5px;
+}
+// =================== Side Bar Section =========================
+.sidebar{
+  float:left;
+  background: white;
+  overflow: auto;
+  width: 400px;
+  margin: 20px;
+  padding-left:30px;
+}
+// =================== Main Body Section =========================
+.guns{
+  float:left;
+  width: 800px;
+  overflow: auto;
+}
+img{
+  width: 200px;
+  padding: 5px;
+  padding-bottom: 50px;
+}
+.box{
+  float: left;
+  background: white;
+  margin: 5px;
+  width: 200px;
+}
+
+
+
+// =================== Footer Section =========================
+.footer{
+  clear: both;
+  height: 100px;
+  border-top: 1px solid gray;
+  text-align: center;
+  padding: 10px;
+    a{
+      padding: 5px;
+      text-decoration: none;
+      color: gray;
+    }
+    button{
+      background: aqua;
+      border-radius: 4px;
+      color: white;
+      padding: 10px;
+    }
+}
+
+
+
