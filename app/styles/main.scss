@@ -2,13 +2,10 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
-// Custom Styles
-body {
-  background: lightgray;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+.container{
+  background: #F5F5F1;
+  font-family: Arial;
 }
-
 
 // =================== Header Section =========================
 .header{
@@ -16,6 +13,7 @@ body {
   padding: 30px;
   border-bottom: 1px solid gray;
   height: 100px;
+  vertical-align: middle;
     h1{
       margin-top: 0px;
       display: inline-block;
@@ -28,33 +26,51 @@ body {
 .upperleft{
   float: left;
   margin-left: 200px;
+    input{
+      width: 300px;
+    }
 }
 .upperright{
   float: right;
+  color: #5BB0CB;
+  font-size: 14px;
   margin-right: 200px;
     button{
       margin: 5px;
+    }
+    a{
+      color: #5BB0CB;
+    }
+    .sign{
+      border: 1px solid #5BB0CB;
     }
 }
 .upperright a:last-child{
   border-left: 1px solid lightgray;
 }
 input{
-  padding: 5px;
-  background:beige;
-  border-radius: 5px;
+  padding: 8px;
+  background: #FBFBFA;
+  border-radius: 4px 0px 0px 4px;
+  margin-right: -5px;
 }
 .srch{
   background: #5BB0CB;
-  border-radius: 4px;
-  padding: 5px;
+  border-radius: 0px 4px 4px 0px;
+  padding: 8px;
   color:white;
+  margin-left: 0px;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .brwse{
   background: white;
-  border: 1px solid gray;
+  border: 1px solid lightgray;
   border-radius: 4px;
-  padding: 5px;
+  padding: 8px;
+  margin-left: 20px;
 }
 .header a{
   padding: 5px;
@@ -74,12 +90,15 @@ input{
   overflow: auto;
   font-size: 12px;
   width: 200px;
-  margin-left: 100px;
+  margin-left: 225px;
   margin-top: 50px;
-  padding-left:30px;
+  padding-left:15px;
     h4{
       color: #0192B5;
       margin-bottom: 0;
+    }
+    span{
+      padding-left: 10px;
     }
 }
 ul{
@@ -94,16 +113,57 @@ li:hover{
   cursor: pointer;
 }
 .filter{
-  
-
+  border-top: 1px solid lightgray;
+}
+#red{
+  background: red;
+  padding: 8px;
+  border-radius: 3px;
+}
+#orange{
+  background: orange;
+  padding: 8px;
+  border-radius: 3px;
+}
+#yellow{
+  background: yellow;
+  padding: 8px;
+  border-radius: 3px;
+}
+#green{
+  background: green;
+  padding: 8px;
+  border-radius: 3px;
+}
+#bblue{
+  background: blue;
+  padding: 8px;
+  border-radius: 3px;
+}
+#purple{
+  background: purple;
+  padding: 8px;
+  border-radius: 3px;
+}
+#black{
+  background: black;
+  padding: 8px;
+  border-radius: 3px;
+}
+#white{
+  background: white;
+  padding: 8px;
+  border-radius: 3px;
+}
+.order ul input[checkbox]{
+  background: black;
 }
 // =================== Main Body Section =========================
 .guns{
   float:left;
-  width: 950px;
-  overflow: auto;
+  width: 800px;
   margin-top: 35px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 img{
   width: 220px;
@@ -111,26 +171,44 @@ img{
 }
 .box{
   float: left;
-  font-family: Times;
-  height: 235px;
+  height: 220px;
   background: white;
   margin-top: 15px;
   margin-right: 10px;
   margin-left: 30px;
+  margin-bottom: 5px;
   width: 220px;
-    h6{
+    h4{
+      margin: 0px;
       font-family: Arial;
-      margin-top:0px;
-      margin-bottom: 2px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 12px;
+      font-weight: normal;
+      padding-left: 5px;
     }
     span{
       color: lightgray;
+      font-size: 12px;
+      padding-left: 5px;
     }
     span:last-child{
       color: lime;
       float: right;
       font-size: 12px;
+      margin-top: 5px;
+      margin-right: 5px;
     }
+}
+.shipTo{
+  h3{
+    display: inline-block;
+  }
+  select{
+    width: 150px;
+    font-size: 15px;
+  }
 }
 // =================== Bottom Nav Section =========================
 .bottom{
@@ -146,19 +224,39 @@ img{
   height: 100px;
   border-top: 1px solid gray;
   text-align: center;
+  font-family: Arial;
   padding: 10px;
     a{
-      padding: 5px;
+      padding: 10px;
+      font-family: Arial;
+      font-size: 12px;
       text-decoration: none;
       color: gray;
+      border: 1px solid lightgray;
     }
     button{
-      background: aqua;
+      background: #5BB0CB;
       border-radius: 4px;
       color: white;
-      padding: 10px;
+      padding-left: 15px;
+      padding-top: 8px;
+      padding-right: 15px;
+      padding-bottom: 8px;
+      margin-left: 15px;
+      font-weight: bold;
     }
 }
-
+.vbot{
+  font-family: Arial;
+  font-size: 12px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+    h4{
+      display: inline-block;
+    }
+    a{
+      border: none;
+    }
+}
 
 

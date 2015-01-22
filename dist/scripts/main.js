@@ -4050,33 +4050,47 @@ var etsy = {
 }
 }
 
-var guns = $('.guns'),
-img_url, img_tag;
+var guns = $('.guns'), img_url, img_tag, login, price, stuff, currency;
 
 
-
-/* etsy.results.forEach( function(item){
-			img_url = item.Images[0].url_170x135;
-			img_tag = "<img src='" + img_url + "'>";
-			classs = item.title;
-			price = item.price;
-			login = item.Shop.login_name;
-			div = img_tag + classs + price + login;
-			
-			guns.append(div)
-		});
-*/
-
-// var theClass = '<div class="box"><img src="item.Images[0].url_170x135"><h6>item.title</h6><span>item.price</span><span>item.Shop.login_name</span></div>'
 
 etsy.results.forEach( function(item){
 			img_url = item.Images[0].url_170x135;
 			img_tag = "<img src='" + img_url + "'>";
 			price = item.price;
 			login = item.Shop.login_name;
-			var theClass = '<div class="box">' + img_tag + '<h6>' + item.title + '</h6><span>' + item.Shop.login_name + '</span><span>' + '$' + item.price + ' USD' + '</span></div>'
+			currency = item.currency_code;
+			var stuff = '<div class="box">' + img_tag + '<h4>' + item.title + '</h4>' + '<span>' + item.Shop.login_name + '</span>' + '<span>' + '$' + item.price + " " + currency + '</span>' + '</div>'
 
-			coup = theClass
+			Finale = stuff
 			
-			guns.append(coup)
+			guns.append(Finale)
 		}); 
+
+
+
+
+// ===================Re-organized =====================
+/*
+
+
+var = itemImage, itemPrice, itemTitle, itemMoney, itemLogin, itemGrab, guns, stuff;
+
+var guns = $('.guns');
+
+etsy.results.forEach( function(item){
+	itemImage = "<img src='" + item.Images[0].url_170x135 + "'>";
+	itemPrice = item.price;
+	itemLogin = item.Shop.login_name;
+	itemTitle = item.title;
+	itemMoney = item.currency_code;
+
+	var itemGrab = '<div class ="box">' + itemImage + '<h6>' + itemTitle + '</h6>' + '<span>' + itemLogin + '</span>' + '<span>' + '$' + itemPrice + '' + itemMoney + '</span>' + '</div>'
+	
+	stuff = itemGrab;
+
+	guns.append(stuff);
+});
+*/
+
+

@@ -19,6 +19,7 @@
 
   </head>
   <body>
+
 <!--=================== Header Section======================-->
     <div class="header">
       <div class="upperleft">
@@ -34,31 +35,26 @@
         <a href="#"> Cart </a>
       </div>
     </div>
-
+<div class="container">
 <!--==================Side-Bar Section =======================-->
     <div class="sidebar">
       <div class="type">
         <h3> Item Type </h3>
         <ul>
           <li> 
-            <label> <input type="radio"> 
-            <span> All Items </span>
-            </label>
+            <input type="radio" name="All Items" value="items"> 
+            <label for="items"><span> All Items </span></label>
           </li>
           <li>
-            <label> <input type="radio"> 
-            <span> Handmade</span>
-            </label>
+            <input type="radio" name="Homemade" value="hand"> 
+            <label for='hand'><span> Handmade</span></label>
           </li>
           <li>
-            <label> <input type="radio"> 
-            <span> Vintage </span>
-            </label>
+            <input type="radio" name="Vintage" value="vin"> 
+            <label for="vin"><span> Vintage </span></label>
           </li>
-          <li> 
-            <label> <input type="radio"> 
-            <span> Craft Supplies </span>
-            </label>
+          <li>  
+            <input type="radio" name="Craft Supplies" value="craft"><label for="craft"><span> Craft Supplies</span></label>
           </li>
         </ul>
 
@@ -94,28 +90,52 @@
       </div>
 
       <div class="filter">
-        <h4> Price Filter </h4>
+        <h3> Price Filter </h3>
         <input type="text"> 
         <input type="text">
 
-        <h4> Filter by Color</h4>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+      
+        <h3> Filter by Color</h3>
+        <button id="red"></button>
+        <button id="orange"></button>
+        <button id="yellow"></button>
+        <button id="green"></button>
+        <button id="bblue"></button>
+        <button id="purple"></button>
+        <button id="black"></button>
+        <button id="white"></button>
       </div>
 
       <div class="order">
-        <h4> Ordering Option </h4>
-
-
+        <h3> Ordering Option </h3>
+        <ul>
+          <input type="checkbox">
+          <span>Accept Etsy Gift Cards</span>
+          <br />
+          <input type="checkbox">
+          <span>Customizable</span>
+        </ul>
       </div>
-
-
+      <div class="ship">
+        <h3>Ship Locations</h3>
+        <ul>
+          <input type="radio"> <span>Anywhere</span>
+          <br />
+          <input type="radio"> <span>United States</span>
+          <br />
+          <span>Choose a custom location </span>
+        </ul>
+      </div>
+      <div class="shipTo">
+        <h3>Ship To</h3>
+        <span>Clear</span>
+        <select name="Where" id="Where">
+          <option value="United States"> United States</option>
+          <option value="Canada"> Canada </option>
+          <option value="Amsterdam"> Amsterdam </option>
+          <option value="Germany"> Germany </option>
+        </select>
+      </div>
     </div>
 
 <!-- =================Main Body Image Section==================-->
@@ -148,7 +168,7 @@
       </div>
     </div>
 
-
+</div>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
