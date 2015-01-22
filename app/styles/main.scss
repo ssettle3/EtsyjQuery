@@ -80,7 +80,7 @@ input{
   background: white;
   border: 1px solid gray;
   border-radius: 4px;
-  padding: 5px;
+  padding: 10px;
 }
 // =================== Side Bar Section =========================
 .sidebar{
@@ -89,7 +89,7 @@ input{
   background: white;
   overflow: auto;
   font-size: 12px;
-  width: 200px;
+  width: 220px;
   margin-left: 225px;
   margin-top: 50px;
   padding-left:15px;
@@ -112,8 +112,13 @@ li:hover{
   text-decoration: underline;
   cursor: pointer;
 }
+.cat{
+  border-top: 1px solid lightgray;
+  margin: 0px 15px 0px 0px;
+}
 .filter{
   border-top: 1px solid lightgray;
+  margin: 0px 15px 0px 0px;
 }
 #red{
   background: red;
@@ -155,8 +160,24 @@ li:hover{
   padding: 8px;
   border-radius: 3px;
 }
-.order ul input[checkbox]{
-  background: black;
+.color{
+  border-top: 1px solid lightgray;
+  margin: 10px 15px 0px 0px;
+}
+.order{
+  border-top: 1px solid lightgray;
+  margin: 10px 15px 0px 0px;
+}
+.ship{
+  border-top: 1px solid lightgray;
+  margin: 0px 15px 20px 0px;
+}
+.shipTo{
+  border-top: 1px solid lightgray;
+  margin: 0px 15px 20px 0px;
+    span{
+      padding-left: 100px
+    }
 }
 // =================== Main Body Section =========================
 .guns{
@@ -213,10 +234,34 @@ img{
 // =================== Bottom Nav Section =========================
 .bottom{
   clear:both;
-  text-align: center;
+  margin: 0 0 0 35%;
+    h5{
+      margin: 0px 0px 10px 0px;
+      padding-top: 30px;
+    }
+    ul{
+      float: left;
+      margin: 0px 15px 0px 15px
+        li{
+          padding: 50px;
+        }
+    }
   
 }
-
+.look{
+  clear: both;
+  margin-left: 35%;
+  font-size: 12px;
+}
+.numNav{
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+    a{
+      text-decoration: none;
+      padding: 0px 5px 0px 5px;
+      font-size: 15px;
+    }
+}
 
 // =================== Footer Section =========================
 .footer{
@@ -251,8 +296,11 @@ img{
   font-size: 12px;
   margin-top: 15px;
   padding-bottom: 15px;
+  color: gray;
     h4{
       display: inline-block;
+      color:lightgray;
+      font-weight: normal;
     }
     a{
       border: none;
