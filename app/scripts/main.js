@@ -23,7 +23,7 @@ etsy.results.forEach( function(item){
 			img_tag = "<img src='" + img_url + "'>";
 			price = item.price;
 			login = item.Shop.login_name;
-			var theClass = '<div class="box">' + img_tag + '<h6>' + item.title + '</h6><span>' + item.Shop.login_name + '</span><span>' + '$' + item.price + '</span></div>'
+			var theClass = '<div class="box">' + img_tag + '<h6>' + item.title + '</h6><span>' + item.Shop.login_name + '</span><span>' + '$' + item.price + ' USD' + '</span></div>'
 
 			coup = theClass
 			
