@@ -4050,7 +4050,7 @@ var etsy = {
 }
 }
 
-var guns = $('.guns'), img_url, img_tag, login, price, stuff, currency;
+var guns = $('.guns'), img_url, img_tag, login, price, stuff, currency, link, userLink;
 
 
 
@@ -4060,13 +4060,14 @@ etsy.results.forEach( function(item){
 			price = item.price;
 			login = item.Shop.login_name;
 			currency = item.currency_code;
-			var stuff = '<div class="box">' + img_tag + '<h4>' + item.title + '</h4>' + '<span>' + item.Shop.login_name + '</span>' + '<span>' + '$' + item.price + " " + currency + '</span>' + '</div>'
+			link = item.url;
+			userLink = item.Shop.url
+			var stuff = '<div class="box">' + '<a href="' + link + '">' + img_tag + '<h4>' + item.title + '</h4>' + '</a>' + '<span>' + item.Shop.login_name + '</span>' + '<span>' + '$' + item.price + " " + currency + '</span>' + '</div>'
 
 			Finale = stuff
 			
 			guns.append(Finale)
-		}); 
-
+		});
 
 
 
