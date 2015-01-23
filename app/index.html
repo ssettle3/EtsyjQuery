@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>Etsy Page Re-Create</title>
+    <title>Etsy</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
+
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -21,9 +24,10 @@
   <body>
 
 <!--=================== Header Section======================-->
+
     <div class="header">
       <div class="upperleft">
-        <h1>Etsy</h1>
+        <img src="./images/etsy.png">
         <input type="text">
         <button class="srch"> Search </button>
         <button class='brwse'> Browse </button>
@@ -32,11 +36,22 @@
         <a href="#"> Help </a>
         <a href="#"> Register </a>
         <button class="sign"> Sign In </button>
-        <a href="#"> Cart </a>
+        <i class="fa fa-shopping-cart"><br/><a href="#"> Cart </a></i>
       </div>
     </div>
+
+<!--===================  Container Start =========================-->
+
 <div class="container">
+    <div class="topL">
+      <h3>Show results for:</h3>    
+      <span>"guns"</span><span> We found 41,345 items!</span>
+    </div>
+    <div class="topR">
+      <span>Sort by:</span><span> Relevancy</span>
+    </div>
 <!--==================Side-Bar Section =======================-->
+
     <div class="sidebar">
 
       <div class="type">
@@ -93,8 +108,10 @@
 
       <div class="filter">
         <h3> Price Filter </h3>
-        <input type="text"> 
-        <input type="text">
+        <input type="text" value="$ min"> 
+        <span>to</span>
+        <input type="text" value="$ max">
+        <button><i class="fa fa-caret-right"></i></button>
       </div>
       <div class="color">
         <h3> Filter by Color</h3>
@@ -141,12 +158,14 @@
     </div>
 
 <!-- =================Main Body Image Section==================-->
+
     <div class="guns">
    
 
     </div>
 
 <!-- ===================Bottom Nav Section =====================-->
+
     <div class="bottom">
       <h5> Related to guns </h5>
       <ul>
@@ -179,8 +198,9 @@
       <a href="">4</a>
       <a href="">5</a>
       <br />
-      <button></button>
-      <button></button>
+      <button><i class="fa fa-caret-left"></i></button>
+      <button><i class="fa fa-caret-right"></i></i></button>
+
       <div class="footer-content">
         <div class="col1">
           <span>Turn Your Passion Into a 
@@ -234,7 +254,10 @@
       </div>
     </div>
 </div>
+<!--=================== End Container =========================-->
+
 <!--=================== Footer Section =========================-->
+
     <div class="footer">
       <a href="#"> United States </a>
       <a href="#"> English (US) </a>
