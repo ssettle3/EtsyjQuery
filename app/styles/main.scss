@@ -2,9 +2,14 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
-.container{
+
+body{
   background: #F5F5F1;
+}
+.container{
   font-family: Arial;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 // =================== Header Section =========================
@@ -83,6 +88,7 @@ input{
   padding: 10px;
 }
 // =================== Side Bar Section =========================
+
 .sidebar{
   clear: both;
   float:left;
@@ -90,9 +96,8 @@ input{
   overflow: auto;
   font-size: 12px;
   width: 220px;
-  margin-left: 225px;
+  padding-left: 20px;
   margin-top: 50px;
-  padding-left:15px;
     h4{
       color: #0192B5;
       margin-bottom: 0;
@@ -163,6 +168,11 @@ li:hover{
 .color{
   border-top: 1px solid lightgray;
   margin: 10px 15px 0px 0px;
+    button{
+      border: 1px solid lightgray;
+      width: 20px;
+      height: 20px;
+    }
 }
 .order{
   border-top: 1px solid lightgray;
@@ -182,9 +192,8 @@ li:hover{
 // =================== Main Body Section =========================
 .guns{
   float:left;
-  width: 800px;
+  width: 780px;
   margin-top: 35px;
-  margin-left: 10px;
 }
 img{
   width: 220px;
@@ -199,6 +208,7 @@ img{
   margin-left: 30px;
   margin-bottom: 5px;
   width: 220px;
+  position: relative;
     h4{
       margin: 0px;
       font-family: Arial;
@@ -209,10 +219,18 @@ img{
       font-weight: normal;
       padding-left: 5px;
     }
+    h4:hover{
+      cursor: pointer;
+      text-decoration: underline;
+    }
     span{
       color: lightgray;
       font-size: 12px;
       padding-left: 5px;
+    }
+    span:hover{
+      cursor: pointer;
+      text-decoration: underline;
     }
     span:last-child{
       color: lime;
@@ -221,6 +239,11 @@ img{
       margin-top: 5px;
       margin-right: 5px;
     }
+}
+.box:hover{
+  box-shadow: 0 0 2px gray;
+  cursor: pointer;
+
 }
 .shipTo{
   h3{
@@ -234,23 +257,27 @@ img{
 // =================== Bottom Nav Section =========================
 .bottom{
   clear:both;
-  margin: 0 0 0 35%;
+  padding-top: 10px;
+  margin-left: 34%;
+  font-family: Arial;
+  font-size: 12px
     h5{
       margin: 0px 0px 10px 0px;
-      padding-top: 30px;
     }
     ul{
       float: left;
-      margin: 0px 15px 0px 15px
-        li{
-          padding: 50px;
-        }
+      margin: 0px 15px 0px 0px
     }
-  
+}
+.bottom ul li{
+  margin-right: 20px;
+  line-height: 150%;
+  font-size: 15px;
 }
 .look{
   clear: both;
-  margin-left: 35%;
+  padding-top: 15px;
+  margin-left: 34%;
   font-size: 12px;
 }
 .numNav{
@@ -262,15 +289,38 @@ img{
       font-size: 15px;
     }
 }
+.footer-content{
+  clear: both;
+  margin: 70px 0px 10px 0px;
+  font-family: Arial;
+  font-size: 14px;
+    div{
+      float: left;
+      text-align: left;
+      padding-right: 80px;
+    }
+     ul{
+      padding: 0px;
+    }
+    li{
+      line-height: 30px
+    }
+    button{
+      background: #5BB0CB;
+      border-radius: 4px;
+      margin: 5px 0px 5px 5px;
+      color: white;
+      font-weight: bold;
+    }
+}
 
 // =================== Footer Section =========================
 .footer{
   clear: both;
-  height: 100px;
-  border-top: 1px solid gray;
   text-align: center;
+  margin: 20px 0px 0px 0px;
+  padding: 30px 0px 10px 0px;
   font-family: Arial;
-  padding: 10px;
     a{
       padding: 10px;
       font-family: Arial;

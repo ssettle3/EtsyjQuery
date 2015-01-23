@@ -19,6 +19,15 @@ etsy.results.forEach( function(item){
 
 
 
+
+
+
+
+
+
+
+
+
 // ===================Re-organized =====================
 /*
 
