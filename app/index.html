@@ -57,22 +57,22 @@
       <div class="type">
         <h3> Item Type </h3>
         <ul>
-          <li> 
-            <input type="radio" name="All Items" value="items"> 
-            <label for="items"><span> All Items </span></label>
+          <li>
+            <input type="radio" value="all" name="likes"> 
+            <label for="all"><span>All Items</span></label>
           </li>
           <li>
-            <input type="radio" name="Homemade" value="hand"> 
-            <label for='hand'><span> Handmade</span></label>
+            <input type="radio" value="hand" name="likes">
+            <label for="hand"><span>Handmade</span></label>
           </li>
           <li>
-            <input type="radio" name="Vintage" value="vin"> 
-            <label for="vin"><span> Vintage </span></label>
+            <input type="radio" value="vintage" name="likes">
+            <label for="vintage"><span>Vintage</span></label>
           </li>
-          <li>  
-            <input type="radio" name="Craft Supplies" value="craft"><label for="craft"><span> Craft Supplies</span></label>
+          <li>
+            <input type="radio" value="craft" name="likes">
+            <label for="craft"><span>Craft Supplies</span></label>
           </li>
-        </ul>
       </div>
       <div class="cat">
         <h3> Categories </h3>  
@@ -138,9 +138,11 @@
       <div class="ship">
         <h3>Ship Locations</h3>
         <ul>
-          <input type="radio"> <span>Anywhere</span>
+          <input type="radio" value="anywhere" name="likes">
+          <label for="anywhere"><span>Anywhere</span></label>
           <br />
-          <input type="radio"> <span>United States</span>
+          <input type="radio" value="united" name="likes">
+          <label for="united"><span>United States</span></label>
           <br />
           <span>Choose a custom location </span>
         </ul>
